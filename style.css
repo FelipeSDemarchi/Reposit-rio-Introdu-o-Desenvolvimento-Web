@@ -1,0 +1,113 @@
+
+
+/* Link fonte no google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&display=swap');
+
+
+/* Cor de fundo da página */
+body {
+    background-color: rgb(94, 88, 88);
+}
+
+/* Nav e lista não ordenada */
+nav ul {
+    border-style: double;
+    border-radius: 9px;
+    border-width: 2px;
+    border-color: rgb(255, 1, 1);
+    text-align: center;
+    list-style-type: none;
+    padding: 0;
+
+    justify-content: center;
+    background-color: #333;
+}
+
+/* Nav, lista não ordenada e suas linhas, e link */
+ nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+/* Personalização título h1 */
+h1 {
+    color: red;
+    font-family: "Changa One", sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+}
+
+/* Personalização subtítulo h2 */
+h2 {
+    color: rgb(252, 53, 53);
+    font-family: "Changa One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Personalização subtítulo h3 */
+h3 {
+    color: rgb(252, 53, 53);
+    font-family: "Changa One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+/*  ID Parágrafo de informação */
+.infop {
+    border-color: rgb(255, 1, 1);
+    border-radius: 9px;
+    border-style: groove;
+    border-width: 2px;
+    font-family:'Times New Roman', Times, serif;
+    text-align: justify;
+    color: rgb(0, 0, 0);
+}
+
+/* ID na imagem da logo da Formula 1 */
+#logof1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10px;
+    width: 300px;
+    height: 200px;
+}
+/* 2° Parágrafo com ID */
+#p02 {
+    border-style: double;
+    border-color: rgb(255, 1, 1);
+}
+
+/* Personalização lista não ordenada geral */
+ul {
+    list-style-type: disc; 
+    list-style-position: inside; 
+}
+
+/* Personalização lista ordenada geral */
+li {
+    list-style-position: inside;
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+/* Personalização lista da organização das corridas com ID */
+#organlista {
+    border-style: solid;
+    border-radius: 9px;
+    border-width: 2px;
+    border-color: rgb(255, 1, 1);
+    list-style-type: decimal;
+    list-style-position: inside;
+}
+/* Personalização lista dos pilotos com ID */
+#equipelista {
+    border-style: dashed;
+    border-radius: 9px;
+    border-width: 2px;
+    border-color: rgb(255, 1, 1);
+    list-style-type: disc;
+    list-style-position: inside;
+}
