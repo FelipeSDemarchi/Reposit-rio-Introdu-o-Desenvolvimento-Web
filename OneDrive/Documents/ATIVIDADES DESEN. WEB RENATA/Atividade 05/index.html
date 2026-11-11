@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+
+    <style>
+
+        h1 {
+            text-align: center;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            padding: 20px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        main {
+            padding: 20px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .container {
+            background-color: #ccc6c6;
+            width: 100%;
+            max-width: 600px;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .campo {
+            display: flex;
+            flex-direction: column;
+             gap: 6px;
+            }
+
+        .campo input,.campo select,.campo textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #b8c1cc;
+            border-radius: 8px;
+            background-color: #fff;
+        }
+        
+        
+        button {
+            border: none;
+            border-radius: 8px;
+            background-color: #3158b5;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        button:hover {
+            background-color: #c3c69c;
+        }
+
+        button[type="reset"] {
+            padding: 10px 20px;
+            background-color: #d11f1f;
+        }
+
+         button[type="submit"] {
+            padding: 10px 20px;
+            background-color: #0c14eb;
+        }
+
+
+
+        @media (max-width: 600px) {
+        body {
+            padding: 10px;
+        }
+
+        .container {
+             padding: 20px;
+            }
+
+        h1 {
+             font-size: 24px;
+            }
+
+        .botoes {
+            flex-direction: column;
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <main class="container">
+
+    <h1>Formulário de cadastro</h1>
+
+    <form>
+
+     <div class="campo">
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" required>
+    </div>
+
+    <div class="campo">
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" name="email" required>
+    </div>
+
+    <div class="campo">
+    <label for="senha">Senha:</label>
+    <input type="password" id="senha" name="senha">
+    </div>
+
+    <div class="campo">
+    <label for="nascimento">Data de nascimento:</label>
+    <input type="date" id="nascimento"name="nascimento">
+    </div>
+
+    <div class="campo">
+    <label for="curso">Curso:</label>
+    <select id="curso" name="curso">
+        <option>
+            Selecione seu curso
+        </option>
+
+        <option value="engenhariasoftware">
+            Engenharia de Software
+        </option>
+
+        <option value="cienciadacompuracao">
+            Ciência da Computação
+        </option>
+    </select>
+    </div>
+    
+
+    <fieldset>
+    <legend>Sexo</legend>
+
+    <label>
+        <input type="radio" name="sexo" value="masculino">
+    Masculino
+    </label>
+
+    <label>
+        <input type="radio" name="sexo" value="feminino">
+    Feminino
+    </label>
+
+    <label>
+        <input type="radio" name="sexo" value="nao-informado">
+    Prefiro não informar
+    </label>
+    </fieldset>
+
+
+    <fieldset>
+    <legend>Interesses</legend>
+
+    <label>
+        <input type="checkbox" name="interesses1" value="cybersecurity">
+        Cybersecurity
+    </label>
+
+    <label>
+        <input type="checkbox" name="interesses2" value="frontend">
+        Front-end
+    </label>
+
+    <label>
+        <input type="checkbox" name="interesses3" value="backend">
+       Back-end
+    </label>
+
+    <label>
+        <input type="checkbox" name="interesses4" value="fullstack">
+        Full-stack
+    </label>
+    </fieldset>
+
+    <div class="campo">
+    <textarea id="comentarios"name="comentarios"rows="4" placeholder="Digite seu comentário.."></textarea>
+    </div>
+
+    <div class="campo">
+    <label for="foto">Upload de foto:</label>
+    <input type="file" id="foto" name="foto" accept="image/*">
+    </div>
+
+    <div class="botoes">
+    <button type="submit">Enviar</button>
+    <button type="reset">Limpar</button>
+    </div>
+
+</form>
+</main>
+
+</body>
+</html>
